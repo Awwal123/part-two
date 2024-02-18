@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+.wrapper {
+    position: relative; /* Added to make .userInput absolute positioning relative to this */
+    width: 100%;
+    height: 630px;
+    min-height: 80vh;
+    background-color: hsl(217, 100%, 97%);
+}
+.background {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.numbers{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;  
+}
+.number {
+    width: 45px;
+    height: 45px;
+    border: 2px solid  hsl(217, 100%, 97%);
+    border-radius: 50px;
+    margin-top: -320px;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+.userInput  {
+    position: absolute;
+    top: 56%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 360px;
+    border-radius: 10px;
+    height: 490px;
+    background-color: hsl(0, 0%, 100%); 
+}
+.card {
+    margin: 40px 12px 25px 35px;
+}
+.btn {
+    border-radius: 8px;
+    font-size: 18px;
+    color:  hsl(0, 0%, 100%);
+    width: 120px;
+    height: 50px;
+    background-color: hsl(213, 96%, 18%);
+}
+.flex {
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.para {
+    margin-top: 15px;
+    color: hsl(231, 11%, 63%); 
+} 
+.heading {
+    font-size: 30px;
+    color: hsl(213, 96%, 18%);
+}
+.paragraph {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 250px;
+    color: hsl(231, 11%, 63%);
+}
+.info {
+    margin-top: 20px;
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid  hsl(231, 11%, 63%);
+}
+.info:hover {
+    background-color: hsl(217, 100%, 97%);
+    border: 2px solid  hsl(213, 96%, 18%);
+}
+.image {
+    margin-left: 20px;
+    float: left;
+    width: 45px;
+    margin-right: 20px;
+}
+.name {
+    font-weight: 700;
+    line-height: 1.5;
+    color: hsl(213, 96%, 18%);
+}
+.dollar {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+.link {
+    text-decoration: none;
+    color: hsl(231, 11%, 63%); 
+}
